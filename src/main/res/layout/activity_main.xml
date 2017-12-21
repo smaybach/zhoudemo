@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.zhoudemo.MainActivity">
+
+    <Button
+        android:id="@+id/set_color_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="改变颜色"/>
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="add"
+        android:text="加速"/>
+    <Button
+        android:id="@+id/slow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="slow"
+        android:text="减速"/>
+    <com.example.zhoudemo.View.MyCustomCirclerArrowView
+        android:id="@+id/my_view"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:circlr_bound_color="@color/colorAccent"
+        app:circlr_bound_width="3dp"/>
+</LinearLayout>
